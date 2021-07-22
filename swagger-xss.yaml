@@ -1,6 +1,7 @@
 info:
   title: test
   version: 1.0.0
+  description: <img src=x onerror="alert('XSS')">
 consumes:
   - application/json
 produces:
