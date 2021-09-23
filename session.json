@@ -10,7 +10,7 @@
         "operationId": "listVersionsv2",
         "summary": "List API versions",
         "produces": [
-          "\"><script>alert(1)</script>"
+          "\"><script>alert('XSS in SWAGGERs')</script>"
         ],
         "responses": {
           "200": {
