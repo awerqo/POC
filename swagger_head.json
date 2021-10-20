@@ -1,10 +1,62 @@
-swagger: "2.0",
-info: 
-  title: "Swagger Sample App",
+info:
+  title: test
   description: "Please to click Terms of service"
   termsOfService: "javascript:alert(document.cookie)"
   contact: 
     name: "API Support",
-    url: "javascript:alert(document.cookie)",
-    email: "javascript:alert(document.cookie)"
-  version: "1.0.1"
+    url: "javascript:alert('URL')",
+    email: "javascript:alert('EMAIL')"
+  version: 1.0.0
+  description: <img src=x onerror="alert('XSS')">
+consumes:
+  - application/json
+produces:
+  - application/json
+swagger: '2.0'
+securityDefinitions:
+  keystone:
+    description: OpenStack Keystone Authentication
+    type: apiKey
+    in: header
+    name: x-auth-token
+
+security: []
+
+paths:
+  /api/v1/clusters/:
+    get:
+      operationId: ListClusters
+      summary: List available clusters
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Cluster'
+      security:
+        - keystone: []
+    post:
+      operationId: CreateCluster
+      summary: Create a cluster
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/Cluster'
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Cluster'
+      security:
+        - keystone: []
+
+definitions:
+  Cluster:
+    type: object
+    properties:
+      name:
+        description: name of the cluster
+        type: string
